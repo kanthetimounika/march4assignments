@@ -1,0 +1,14 @@
+l=[]
+n=int(input())
+s=input()
+l=s.split()
+l1=[]
+for i in range(n):
+    x=int(l[i])
+    l1.append(x)
+res=[]
+for i in l:
+    if i not in res:
+        res.append(i)
+c=len(l1)-len(res)
+print(c)
